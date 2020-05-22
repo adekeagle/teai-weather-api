@@ -26,7 +26,7 @@ public class WeatherController {
         if(warsaw != null) {
             model.addAttribute("weather", warsaw.getMain());
             model.addAttribute("icon", warsaw.getSrc());
-            model.addAttribute("costam", warsaw.getName());
+            model.addAttribute("city", warsaw.getName());
         }else{
             return "error";
         }
